@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUNDO PC - Servicio Técnico</title>
+  <meta name="description" content="MUNDO PC en Santiago Jamiltepec Oaxaca. Reparación y mantenimiento de computadoras, celulares e impresoras.">
+
+  <style>
+    :root{--primary:#1e88e5;--bg:#0b1220;}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial;background:#e0f2fe;color:#000000}
+    header{background:#60a5fa;color:#000000}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:bold}
+    .logo{width:48px;height:48px;border-radius:10px;object-fit:contain;background:#fff;padding:4px}
+    .btn{background:#fff;color:#000;border:none;border-radius:12px;padding:10px 16px;font-weight:bold;cursor:pointer;text-decoration:none}
+    .hero{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;padding:32px 0}
+    .card{background:#f0f9ff;border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,.1);padding:20px}
+    h1,h2,h3{margin-top:0}
+    section{padding:32px 0}
+    .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    footer{background:#020617;color:#000}
+    @media (max-width:800px){.hero,.grid,.contact{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="nav">
+      <div class="brand">
+        <img class="logo" src="logo.png" alt="Logo MUNDO PC" onerror="this.style.display='none'">
+        <div>
+          <div>MUNDO PC</div>
+          <small>Servicio Técnico</small>
+        </div>
+      </div>
+      <div>
+        <a class="btn" href="#contacto">Contacto</a>
+        <a class="btn" href="https://wa.me/529541810935" target="_blank">WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div>
+        <h1>Reparación y Mantenimiento</h1>
+        <p>Computadoras, celulares e impresoras en Santiago Jamiltepec, Oaxaca.</p>
+      </div>
+      <div class="card">
+        <h3>Horario</h3>
+        <p>Lunes a Sábado: 8:00 am - 7:00 pm</p>
+        <p><strong>Tel:</strong> 954 181 0935<br><strong>Email:</strong> de_leon_omar@hotmail.com</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="container">
+      <h2>Servicios</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>🖥️ Computadoras</h3>
+          <ul>
+            <li>Formateo e instalación de Windows</li>
+            <li>Limpieza interna y mantenimiento</li>
+            <li>Cambio de disco duro, SSD y memoria RAM</li>
+            <li>Eliminación de virus y optimización</li>
+            <li>Instalación de programas</li>
+            <li>Reparación de pantallas, teclados y puertos</li>
+            <li>Respaldo y recuperación de información</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>📱 Celulares</h3>
+          <ul>
+            <li>Actualización y reinstalación de software</li>
+            <li>Respaldo y restauración de datos</li>
+            <li>Configuración general</li>
+            <li>Solución de errores del sistema</li>
+            <li>Cambio de batería y centro de carga</li>
+            <li>Cambio de pantalla</li>
+            <li>Instalación de aplicaciones</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>🖨️ Impresoras</h3>
+          <ul>
+            <li>Instalación y configuración</li>
+            <li>Mantenimiento y limpieza</li>
+            <li>Solución de atascos de papel</li>
+            <li>Reparación de errores y fallas</li>
+            <li>Problemas de conexión</li>
+            <li>Mejora de calidad de impresión</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="container">
+      <h2>Contacto</h2>
+      <div class="contact">
+        <div class="card">
+          <p><strong>Nombre:</strong> Omar Tapia de León</p>
+          <p><strong>Negocio:</strong> MUNDO PC</p>
+          <p><strong>Ciudad:</strong> Santiago Jamiltepec, Oaxaca</p>
+          <p><strong>Tel:</strong> 954 181 0935</p>
+        </div>
+        <div class="card">
+          <h3>Ubicación</h3>
+          <iframe src="https://www.google.com/maps?q=Mundo%20PC%20Santiago%20Jamiltepec%20Oaxaca&output=embed" width="100%" height="280" style="border:0"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© <span id="y"></span> MUNDO PC</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("y").innerText = new Date().getFullYear();
+</script>
+
+</body>
+</html>
